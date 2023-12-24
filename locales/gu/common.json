@@ -1,0 +1,23 @@
+{
+  "commonTranslations": {
+    "siteHeader": {},
+    "siteNavigation": {
+      "featuresLinkText": "વિશેષતા",
+      "pricingLinkText": "કિંમત",
+      "aboutLinkText": "વિશે",
+      "contactLinkText": "સંપર્ક",
+      "testimonialsLinkText": "પ્રશંસાપત્રો",
+      "blogLinkText": "બ્લોગ",
+      "careersLinkText": "કારકિર્દી",
+      "termsLinkText": "શરતો",
+      "privacyLinkText": "ગોપનીયતા",
+      "refundLinkText": "રકમ પરત"
+    },
+    "siteFooter": {
+      "marksToInclude": "© ",
+      "allRightsReserved": "સર્વહક સ્વાધીન.",
+      "authorPreTitle": "",
+      "authorPostTitle": "દ્વારા ❤️ થી બનાવેલ"
+    }
+  }
+}

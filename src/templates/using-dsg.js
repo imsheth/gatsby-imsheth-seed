@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import BaseLayout from "../components/baseLayout"
 import Seo from "../components/seo"
 
 const UsingDSG = () => (
-  <Layout>
+  <BaseLayout>
     <h1>
       Hello from a <b>DSG Page</b>
     </h1>
@@ -18,7 +18,7 @@ const UsingDSG = () => (
       .
     </p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  </BaseLayout>
 )
 
 export const Head = () => <Seo title="Using DSG" />

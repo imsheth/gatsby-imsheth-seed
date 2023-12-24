@@ -1,0 +1,23 @@
+{
+  "commonTranslations": {
+    "siteHeader": {},
+    "siteNavigation": {
+      "featuresLinkText": "Features",
+      "pricingLinkText": "Pricing",
+      "aboutLinkText": "About",
+      "contactLinkText": "Contact",
+      "testimonialsLinkText": "Testimonials",
+      "blogLinkText": "Blog",
+      "careersLinkText": "Careers",
+      "termsLinkText": "Terms",
+      "privacyLinkText": "Privacy",
+      "refundLinkText": "Refund"
+    },
+    "siteFooter": {
+      "marksToInclude": "© ",
+      "allRightsReserved": "All Rights Reserved.",
+      "authorPreTitle": "Made with ❤️ by",
+      "authorPostTitle": ""
+    }
+  }
+}

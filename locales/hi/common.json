@@ -1,0 +1,23 @@
+{
+  "commonTranslations": {
+    "siteHeader": {},
+    "siteNavigation": {
+      "featuresLinkText": "विशेषताएँ",
+      "pricingLinkText": "कीमत",
+      "aboutLinkText": "बारे में",
+      "contactLinkText": "संपर्क",
+      "testimonialsLinkText": "प्रशंसापत्र",
+      "blogLinkText": "ब्लॉग",
+      "careersLinkText": "पेशा",
+      "termsLinkText": "शर्तें",
+      "privacyLinkText": "गोपनीयता",
+      "refundLinkText": "धनवापसी"
+    },
+    "siteFooter": {
+      "marksToInclude": "© ",
+      "allRightsReserved": "सर्वाधिकार आरिक्षत.",
+      "authorPreTitle": "",
+      "authorPostTitle": "द्वारा ❤️ से बनाया गया"
+    }
+  }
+}

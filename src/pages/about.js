@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import BaseLayout from "../components/baseLayout"
 import Seo from "../components/seo"
@@ -13,7 +13,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-const IndexPage = () => {
+const AboutPage = () => {
   console.log("pageAndCommonData", pageAndCommonData)
   const { languages, originalPath, t, i18n } = useI18next()
   return (
@@ -38,18 +38,17 @@ export const Head = () => {
   const { languages, originalPath, t, i18n } = useI18next()
   const theTitle = t("seo")
   console.log("theTitle", theTitle)
-  console.log("pageAndCommonData", pageAndCommonData)
   const location = useGeoLocation()
   console.log(location)
   return <Seo title={t("seo")} />
 }
 
-export default IndexPage
+export default AboutPage
 
 export const pageAndCommonData = graphql`
   query ($language: String!) {
     locales: allLocale(
-      filter: { ns: { in: ["index", "common"] }, language: { eq: $language } }
+      filter: { ns: { in: ["about", "common"] }, language: { eq: $language } }
     ) {
       edges {
         node {
