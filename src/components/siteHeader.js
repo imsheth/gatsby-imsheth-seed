@@ -43,39 +43,33 @@ const SiteHeader = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link>
-              <Link
-                to="/about/"
-                style={{ textDecoration: "none", marginRight: "10px" }}
-              >
-                <Trans i18nKey="commonTranslations.siteNavigation.featuresLinkText"></Trans>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link
-                to="/about/"
-                style={{ textDecoration: "none", marginRight: "10px" }}
-              >
-                <Trans i18nKey="commonTranslations.siteNavigation.pricingLinkText"></Trans>
-              </Link>
-            </Nav.Link>
+            <Link
+              to="/about/"
+              style={{ textDecoration: "none", marginRight: "10px" }}
+            >
+              <Trans i18nKey="commonTranslations.siteNavigation.featuresLinkText"></Trans>
+            </Link>
+            <Link
+              to="/about/"
+              style={{ textDecoration: "none", marginRight: "10px" }}
+            >
+              <Trans i18nKey="commonTranslations.siteNavigation.pricingLinkText"></Trans>
+            </Link>
           </Nav>
 
           <Nav>
-            <Nav.Link>
-              <Link
-                to="/about/"
-                style={{ textDecoration: "none", marginRight: "10px" }}
-              >
-                <Trans i18nKey="commonTranslations.siteNavigation.aboutLinkText"></Trans>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/about/" style={{ textDecoration: "none" }}>
-                <Trans i18nKey="commonTranslations.siteNavigation.contactLinkText"></Trans>
-              </Link>
-            </Nav.Link>
+            <Link
+              to="/about/"
+              style={{ textDecoration: "none", marginRight: "10px" }}
+            >
+              <Trans i18nKey="commonTranslations.siteNavigation.aboutLinkText"></Trans>
+            </Link>
 
+            <Link to="/about/" style={{ textDecoration: "none" }}>
+              <Trans i18nKey="commonTranslations.siteNavigation.contactLinkText"></Trans>
+            </Link>
+          </Nav>
+          <Nav>
             {/* Todo: Fix the UX here */}
             <NavDropdown
               title={i18n.resolvedLanguage}

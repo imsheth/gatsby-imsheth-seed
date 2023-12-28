@@ -22,7 +22,20 @@ const NotFoundPage = () => {
   )
 }
 
-export const Head = () => <Seo title="404: Not Found" />
+export const Head = () => {
+  const { languages, originalPath, t, i18n } = useI18next()
+  const location = useGeoLocation()
+  console.log("locationHead", location)
+  document.documentElement.lang = i18n.resolvedLanguage
+  return (
+    <Seo
+      title="SEO title"
+      description="SEO description"
+      slug="SEO_slug"
+      image="/images/logo.svg"
+    />
+  )
+}
 
 export default NotFoundPage
 

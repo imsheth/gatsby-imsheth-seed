@@ -12,7 +12,18 @@ const SecondPage = props => {
   return <BaseLayout></BaseLayout>
 }
 
-export const Head = () => <Seo title="Page two" />
+export const Head = () => {
+  const { languages, originalPath, t, i18n } = useI18next()
+  document.documentElement.lang = i18n.resolvedLanguage
+  return (
+    <Seo
+      title="SEO title"
+      description="SEO description"
+      slug="SEO_slug"
+      image="/images/logo.svg"
+    />
+  )
+}
 
 export default SecondPage
 

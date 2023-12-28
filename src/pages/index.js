@@ -14,7 +14,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 const IndexPage = () => {
-  console.log("pageAndCommonData", pageAndCommonData)
+  // console.log("pageAndCommonDataIndexPage", pageAndCommonData)
   const { languages, originalPath, t, i18n } = useI18next()
   return (
     <BaseLayout>
@@ -34,17 +34,22 @@ const IndexPage = () => {
   )
 }
 
+export default IndexPage
+
 export const Head = () => {
   const { languages, originalPath, t, i18n } = useI18next()
-  const theTitle = t("seo")
-  console.log("theTitle", theTitle)
-  console.log("pageAndCommonData", pageAndCommonData)
   const location = useGeoLocation()
-  console.log(location)
-  return <Seo title={t("seo")} />
+  console.log("locationHead", location)
+  document.documentElement.lang = i18n.resolvedLanguage
+  return (
+    <Seo
+      title="SEO title"
+      description="SEO description"
+      slug="SEO_slug"
+      image="/images/logo.svg"
+    />
+  )
 }
-
-export default IndexPage
 
 export const pageAndCommonData = graphql`
   query ($language: String!) {

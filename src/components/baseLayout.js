@@ -15,8 +15,6 @@ import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
 
 const Layout = ({ children }) => {
-  const { i18n } = useI18next()
-  document.documentElement.lang = i18n.resolvedLanguage
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -28,8 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    // Todo: Fix the overflow-y here
-    <html data-bs-theme="light">
+    <>
       <SiteHeader
         siteTitle={
           data.site.siteMetadata?.title || `siteMetadata.title missing`
@@ -37,7 +34,7 @@ const Layout = ({ children }) => {
       />
       <Container>{children}</Container>
       <SiteFooter />
-    </html>
+    </>
   )
 }
 
