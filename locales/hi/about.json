@@ -1,5 +1,6 @@
 {
-  "seo": "बारे में seo पाठ",
+  "seoTitle": "बारे में seo शीर्षक",
+  "seoDescription": "बारे में seo पाठ",
   "contentTitle1": "बारे में सामग्री शीर्षक",
   "contentText1": "बारे में सामग्री पाठ 1",
   "contentText2": "बारे में सामग्री पाठ 2",

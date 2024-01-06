@@ -1,5 +1,6 @@
 {
-  "seo": "About seo text",
+  "seoTitle": "About seo title",
+  "seoDescription": "About seo text",
   "contentTitle1": "About content title 1",
   "contentText1": "About content text 1",
   "contentText2": "About content text 2",

@@ -26,7 +26,7 @@ const IndexPage = () => {
         </Col>
       </Row>
       <Row>
-        <Col sm>{t("contentText1")}</Col>
+        <Col sm>{t("seoTitle")}</Col>
         <Col sm>{t("contentText2")}</Col>
         <Col sm>{t("contentText3")}</Col>
       </Row>
@@ -36,17 +36,23 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => {
+export const Head = ({ data }) => {
   const { languages, originalPath, t, i18n } = useI18next()
+  console.log(i18n.resolvedLanguage)
+  // document.documentElement.lang = i18n.resolvedLanguage
+  const pageTranslations = JSON.parse(
+    data.locales.edges.find(e => e.node.ns === "index").node.data
+  )
+
   const location = useGeoLocation()
   console.log("locationHead", location)
-  document.documentElement.lang = i18n.resolvedLanguage
+
   return (
     <Seo
-      title="SEO title"
-      description="SEO description"
-      slug="SEO_slug"
-      image="/images/logo.svg"
+      title={pageTranslations["seoTitle"]}
+      description={pageTranslations["seoDescription"]}
+      slug=""
+      image="/images/favicon.png"
     />
   )
 }

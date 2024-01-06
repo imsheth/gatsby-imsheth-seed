@@ -15,6 +15,7 @@ import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
 
 function Seo({ description, title, slug, image, children }) {
+  console.log("children", children)
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -52,10 +53,10 @@ function Seo({ description, title, slug, image, children }) {
       <html lang={i18n.resolvedLanguage} />
       <meta charSet="utf-8" />
 
-      <title>{pageMeta.title}</title>
+      <title id="translated-title">{pageMeta.title}</title>
       <meta name="description" content={pageMeta.description} />
       <meta name="image" content={pageMeta.image} />
-      {/* {siteIcon && <link rel="icon" href={siteIcon} />} */}
+      <link rel="icon" href={pageMeta.image} />
 
       <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
       <meta name="MobileOptimized" content="320" />
